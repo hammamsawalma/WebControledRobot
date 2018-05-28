@@ -1,1 +1,3 @@
 # WebControledRobot
+A system designed using the Raspberry Pi3 that controls the movement direction and the speed of 4 DC motors using a motor driver (L293d), interfacing with the outside light using LDR (Light Dependent Resistor) which detects the light outside and return an information about it. Also, a power-led is used to light the atmosphere when it is dark atmosphere (can be turned on and off manually via control panel, not automatically). All of these hardware is controlled using scripts written in python language. 
+Control panel is designed as a Web Page using HTML,CSS & PHP languages. The whole control is done through the Web Page itself. Web page can be accessed from anywhere through a changing link as it will be explained below.   
