@@ -245,13 +245,13 @@ $speed = $_POST['speed'] ;
 }
 if($speed == 'H'){
 clean();
-shell_exec("sudo python ./RobotCarPython/BACKWARD90.py");}
+shell_exec("sudo python ./PythonScripts/BACKWARD90.py");}
 else if($speed == 'M'){
 clean();
-shell_exec("sudo python ./RobotCarPython/BACKWARD50.py");}
+shell_exec("sudo python ./PythonScripts/BACKWARD50.py");}
 else if($speed == 'L'){
 clean();
-shell_exec("sudo python ./RobotCarPython/BACKWARD30.py");}		
+shell_exec("sudo python ./PythonScripts/BACKWARD30.py");}		
 }
 			 
 // LEFT
@@ -263,13 +263,13 @@ $speed = $_POST['speed'] ;
 }
 if($speed == 'H'){
 clean();
-shell_exec("sudo python ./RobotCarPython/LEFT90.py");}
+shell_exec("sudo python ./PythonScripts/LEFT90.py");}
 else if($speed == 'M'){
 clean();
-shell_exec("sudo python ./RobotCarPython/LEFT50.py");}
+shell_exec("sudo python ./PythonScripts/LEFT50.py");}
 else if($speed == 'L'){
 clean();
-shell_exec("sudo python ./RobotCarPython/LEFT30.py");}		
+shell_exec("sudo python ./PythonScripts/LEFT30.py");}		
 }
 			 
 // RIGHT
@@ -281,13 +281,13 @@ $speed = $_POST['speed'] ;
 }
 if($speed == 'H'){
 clean();
-shell_exec("sudo python ./RobotCarPython/RIGHT90.py");}
+shell_exec("sudo python ./PythonScripts/RIGHT90.py");}
 else if($speed == 'M'){
 clean();
-shell_exec("sudo python ./RobotCarPython/RIGHT50.py");}
+shell_exec("sudo python ./PythonScripts/RIGHT50.py");}
 else if($speed == 'L'){
 clean();
-shell_exec("sudo python ./RobotCarPython/RIGHT30.py");}		
+shell_exec("sudo python ./PythonScripts/RIGHT30.py");}		
 }			 
 // STOP
 if (isset($_POST['stop'])) {
@@ -298,13 +298,13 @@ $speed = $_POST['speed'] ;
 }
 if($speed == 'H'){
 clean();
-shell_exec("sudo python ./RobotCarPython/STOP.py");}
+shell_exec("sudo python ./PythonScripts/STOP.py");}
 else if($speed == 'M'){
 clean();
-shell_exec("sudo python ./RobotCarPython/STOP.py");}
+shell_exec("sudo python ./PythonScripts/STOP.py");}
 else if($speed == 'L'){
 clean();
-shell_exec("sudo python ./RobotCarPython/STOP.py");}		
+shell_exec("sudo python ./PythonScripts/STOP.py");}		
 }			 
 			 ?>
                   
