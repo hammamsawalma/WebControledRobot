@@ -221,6 +221,7 @@ function clean(){
 			 
 //FORWARD
 if (isset($_POST['forward'])) {
+clean();
 if(isset($_POST['speed']))
 {
 //echo "You have selected :".$_POST['speed'];  //  Displaying Selected Value
@@ -228,19 +229,20 @@ $speed = $_POST['speed'] ;
 }
 if($speed == 'H'){
 clean();
-shell_exec("sudo python ./RobotCarPython/FORWARD90.py");}
+shell_exec("sudo python ./PythonScripts/FORWARD90.py");}
 else if($speed == 'M'){
 clean();
-shell_exec("sudo python ./RobotCarPython/FORWARD50.py");}
+shell_exec("sudo python ./PythonScripts/FORWARD50.py");}
 else if($speed == 'L'){
 clean();
-shell_exec("sudo python ./RobotCarPython/FORWARD30.py");}		
+shell_exec("sudo python ./PythonScripts/FORWARD30.py");}		
 }
 // BACKWARD
 if (isset($_POST['backward'])) {
+clean();
 if(isset($_POST['speed']))
 {
-echo "You have selected :".$_POST['speed'];  //  Displaying Selected Value
+//echo "You have selected :".$_POST['speed'];  //  Displaying Selected Value
 $speed = $_POST['speed'] ;
 }
 if($speed == 'H'){
@@ -256,6 +258,7 @@ shell_exec("sudo python ./PythonScripts/BACKWARD30.py");}
 			 
 // LEFT
 if (isset($_POST['left'])) {
+clean();
 if(isset($_POST['speed']))
 {
 //echo "You have selected :".$_POST['speed'];  //  Displaying Selected Value
@@ -274,6 +277,7 @@ shell_exec("sudo python ./PythonScripts/LEFT30.py");}
 			 
 // RIGHT
 if (isset($_POST['right'])) {
+clean();
 if(isset($_POST['speed']))
 {
 //echo "You have selected :".$_POST['speed'];  //  Displaying Selected Value
@@ -291,6 +295,8 @@ shell_exec("sudo python ./PythonScripts/RIGHT30.py");}
 }			 
 // STOP
 if (isset($_POST['stop'])) {
+clean();
+shell_exec("sudo python ./PythonScripts/STOP.py");
 if(isset($_POST['speed']))
 {
 //echo "You have selected :".$_POST['speed'];  //  Displaying Selected Value
